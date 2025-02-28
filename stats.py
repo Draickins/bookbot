@@ -5,3 +5,8 @@ def word_counter(book):
         counter += 1
     return counter
 
+def character_counter(book):
+    character_dict = {}
+    for char in book:
+        character_dict[char.lower()] = character_dict.get(char.lower(), 0) + 1
+    return character_dict
