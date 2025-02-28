@@ -1,10 +1,5 @@
-from test.test_configparser import SortedDict
 def word_counter(book):
-    words = book.split()
-    counter = 0
-    for word in words:
-        counter += 1
-    return counter
+    return len(book.split())
 
 def character_counter(book):
     character_dict = {}
