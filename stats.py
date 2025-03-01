@@ -1,10 +1,11 @@
-def word_counter(book):
+def words_counter(book):
     return len(book.split())
 
-def character_counter(book):
+def characters_counter(book):
     character_dict = {}
     for char in book:
-        character_dict[char.lower()] = character_dict.get(char.lower(), 0) + 1
+        char_lower = char.lower()
+        character_dict[char_lower] = character_dict.get(char_lower, 0) + 1
     return character_dict
 
 def sorted_list(char_dict):
